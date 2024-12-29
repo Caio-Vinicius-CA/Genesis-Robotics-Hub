@@ -7,11 +7,12 @@
     font-weight: bold;
 }
 body{
-    background-color: #e0e0e0;
+    background-color: #E6E6E6;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     position: fixed;
-    background: #FCDDD8;
+    background: #1C1C1E;
     height: 80px;
     width: 100%;
     z-index: 1;
@@ -27,7 +28,6 @@ header{
 #logo{
     height: 80px;
     padding: 4px 0;
-    border: 1px solid red;
 }
 #head-list{
     display: grid;
@@ -46,7 +46,7 @@ header li{
 }
 #head-list li a{
     display: block;
-    color: #517390;
+    color: #727c90;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -97,17 +97,16 @@ main{
     font-size: 1.2rem;
 }
 #left-landing h2, #left-landing h1{
-    color: #ffffff;
-    text-shadow: 
-    0.2px 0.2px 1px #7a7a7a,  
-    -0.2px -0.2px 1px #7a7a7a,  
-    0.2px -0.2px 1px #7a7a7a, 
-    -0.2px 0.2px 1px #7a7a7a; /* Creates the border effect */
+    color: #4a4a4a;
 }
 #left-landing h1{
     text-transform: uppercase;
+    line-height: 38px;
 }
-#colorfull{
+#colorfull1{
+    color: #727c90;
+}
+#colorfull2{
     color: #517390;
 }
 #landing-img{
@@ -115,7 +114,7 @@ main{
     margin-top: 20px;
 }
 #btn-left button{
-    background: url(img/btnbg\ 1\ 1.svg) no-repeat center;    
+    background: url(../assets/btnbg\ 1\ 1.svg) no-repeat center;
     background-size: cover;
     cursor: pointer;
     border: none;
@@ -206,7 +205,6 @@ main{
     object-position: center;
     overflow: hidden;
     border-radius: 30px;
-    /* border: 1px solid red; */
 }
 .pTexts{
     display: flex;
@@ -236,7 +234,7 @@ main{
     margin-top: 10px;
 }
 .cartBtn{
-    background: url(img/icons/shopping-cart.png) center no-repeat;
+    background: url(../assets/icons/shopping-cart.png) center no-repeat;
     background-size: cover;
     border: none;
     margin-top: 2px;
@@ -246,7 +244,7 @@ main{
     cursor: pointer;
 }
 #offer{
-    background: url(img/banner.png) right no-repeat;
+    background: url(../assets/banner.png) right no-repeat;
     background-size: cover;
     opacity: 0.95;
     width: 100%;
@@ -305,10 +303,10 @@ main{
     color: white;
 }
 #big-banner-1{
-    background: url(img/child-roboto.png);
+    background: url(../assets/child-roboto.png);
 }
 #big-banner-2{
-    background: url(img/deepmind.png);
+    background: url(../assets/deepmind.png);
 }
 .banner-texts{
     position: absolute;
@@ -353,13 +351,13 @@ main{
     transition: 0.3s ease-in-out;
 }
 #small-banner-1{
-    background: url(img/education.png);
+    background: url(../assets/education.png);
 }
 #small-banner-2{
-    background: url(img/market.png);
+    background: url(../assets/market.png);
 }
 #small-banner-3{
-    background: url(img/worker.png);
+    background: url(../assets/worker.png);
 }
 .small-banner-text{
     background: #6d6d6db0;
@@ -469,11 +467,11 @@ footer button{
     border-radius: 10px;
 }
 footer #b1{
-    background: url(img/app-store.png) center;
+    background: url(../assets/app-store.png) center;
     background-size: cover;
 }
 footer #b2{
-    background: url(img/google-play.png) center;
+    background: url(../assets/google-play.png) center;
     background-size: cover;
 }
 #minis{
