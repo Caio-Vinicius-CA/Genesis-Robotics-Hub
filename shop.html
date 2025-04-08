@@ -4,204 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesis Robotics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div id="size">
             <div>
-                <img src="assets/logo/Genesis-logo-complete.png" alt="" class="logo" id="scrollToTop">
+                <img src="assets/logo/Genesis-logo-complete.png" alt="" class="logo" onclick="window.location.href='index.html'">
             </div>
-            <div>
+            <div id="fake-nav">
+                <div id="numsei">
+                    <ul id="head-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="Shop.html">Shop</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li id="cart-li"><a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></li></a>
+                    </ul>
+                </div>
+                <div id="mobile">
+                    <a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></a>
+                    <i id="bars" class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <nav id="side-menu">
                 <ul id="head-list">
                     <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="Shop.html">Shop</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></li></a>
                 </ul>
-            </div>
+                <span id="close-menu">&times;</span>
+            </nav>
         </div>
     </header>
     <main>
         <div id="shop-landing">
             <div id="shop-landing-txt">
                 <h1>GREAT DISCOUNTS</h1>
-                <p>Save more with vouchers & up to 70% off!</p>
+                <p>Save more with vouchers and enjoy up to 30% off!</p>
             </div>
         </div>
-        <div id="all-shop-products">
+        <div id="all-products">
             <div id="all-shop-product-cards">
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/NAO V6.png" alt="" class="card-image">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">SoftBank Robotics</span>
-                        <span>NAO V6 Humanoid Robot</span>
-                        <p>A versatile humanoid robot used in education, research and interactive applications.</p>
+                    <a  href="sproduct.html?id=1">
+                        <div class="pImg">
+                                <img src="assets/NAO V6.png" alt="" class="card-image">
+                        </div>
+                        <div class="pTexts">
+                            <span class="corp-name">SoftBank Robotics</span>
+                            <span>NAO V6 Humanoid Robot</span>
+                            <p>A versatile humanoid robot used in education, research and interactive applications.</p>    
+                        </div>
+                    </a>
                         <div class="price-cart">
                             <p class="price">$14,990</p>
                             <button class="cartBtn"></button>
                         </div>
-                    </div>
                 </div>
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/Kebbi.png" alt="" class="card-image">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">NUWA Robotics</span>
-                        <span>NUWA Kebbi Air Robot</span>
-                        <p>Interactive robot designed for education, customer service and healthcare assistance.</p>
+                    <a  href="sproduct.html?id=2">
+                        <div class="pImg">
+                                <img src="assets/Kebbi.png" alt="" class="card-image">
+                        </div>
+                        <div class="pTexts">
+                            <span class="corp-name">NUWA Robotics</span>
+                            <span>Kebbi Air Robot</span>
+                            <p>Interactive robot designed for education, customer service and healthcare assistance.</p>    
+                        </div>
+                    </a>
                         <div class="price-cart">
                             <p class="price">$5,000</p>
                             <button class="cartBtn"></button>
                         </div>
-                    </div>
                 </div>
+                <!-- Produto 3 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/drone.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Vision Aerial</span>
-                        <span>Vision Aerial Drone</span>
-                        <p>Professional drone for mapping, inspection, surveying, and aerial photography.</p>
-                        <div class="price-cart">
-                            <p class="price">$52,290</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=3">
+                        <div class="pImg">
+                            <img src="assets/drone.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">Vision Aerial</span>
+                            <span>Vision Aerial Drone</span>
+                            <p>Professional drone for mapping, inspection, surveying, and aerial photography.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$52,290</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 4 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/guidebot.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">LG Electronics</span>
-                        <span>LG Cloi GuideBot Robot</span>
-                        <p>Autonomous robot for navigation, advertising and security monitoring in public spaces.</p>
-                        <div class="price-cart">
-                            <p class="price">$39,990</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=4">
+                        <div class="pImg">
+                            <img src="assets/guidebot.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">LG Electronics</span>
+                            <span>LG Cloi GuideBot Robot</span>
+                            <p>Autonomous robot for navigation, advertising and security monitoring in public spaces.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$39,990</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 5 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/dobot.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Dobot</span>
-                        <span>Dobot Robotic Arm CR5</span>
-                        <p>Collaborative robotic arm with a 5 kg payload capacity for material handling with precision.</p>
-                        <div class="price-cart">
-                            <p class="price">$22,980</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=5">
+                        <div class="pImg">
+                            <img src="assets/dobot.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">Dobot</span>
+                            <span>Dobot Robotic Arm CR5</span>
+                            <p>Collaborative robotic arm with a 5 kg payload capacity for material handling with precision.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$22,980</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 6 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/health.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">UBTECH Robotics</span>
-                        <span>Ubtech Cruzr Robot</span>
-                        <p>Commercial service robot that interacts through voice, text, and video for reception and guidance.</p>
-                        <div class="price-cart">
-                            <p class="price">$35,000</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=6">
+                        <div class="pImg">
+                            <img src="assets/health.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">UBTECH Robotics</span>
+                            <span>Ubtech Cruzr Robot</span>
+                            <p>Commercial service robot that interacts through voice, text, and video for reception and guidance.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$35,000</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 7 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/tesla.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Tesla, Inc</span>
-                        <span>Tesla Optimus Gen 2</span>
-                        <p>Humanoid robot designed for repetitive and hazardous tasks aiming to improve efficiency in industries.</p>
-                        <div class="price-cart">
-                            <p class="price">$20,000</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=7">
+                        <div class="pImg">
+                            <img src="assets/tesla.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">Tesla, Inc</span>
+                            <span>Tesla Optimus Gen 2</span>
+                            <p>Humanoid robot designed for repetitive and hazardous tasks aiming to improve efficiency in industries.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$20,000</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 8 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/cyberdog.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Xiaomi</span>
-                        <span>Xiaomi CyberDog 2</span>
-                        <p>Bio-inspired quadruped robot designed for research, entertainment and smart home integration.</p>
-                        <div class="price-cart">
-                            <p class="price">$3,999</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=8">
+                        <div class="pImg">
+                            <img src="assets/cyberdog.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">Xiaomi</span>
+                            <span>Xiaomi CyberDog 2</span>
+                            <p>Bio-inspired quadruped robot designed for research, entertainment and smart home integration.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$3,999</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 9 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/LimoPro.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">AgileX</span>
-                        <span>LIMO PRO</span>
-                        <p>Tailored for AI learning and autonomous navigation application development.</p>
-                        <div class="price-cart">
-                            <p class="price">$3,200</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=9">
+                        <div class="pImg">
+                            <img src="assets/LimoPro.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">AgileX</span>
+                            <span>LIMO PRO</span>
+                            <p>Tailored for AI learning and autonomous navigation application development.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$3,200</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 10 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/R12-3.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Lionsbot</span>
-                        <span>R12 Rex Scrub</span>
-                        <p>The king of cleans! Equipped with innovative technology to clean even the most challenging messes.</p>
-                        <div class="price-cart">
-                            <p class="price">$81,150</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=10">
+                        <div class="pImg">
+                            <img src="assets/R12-3.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">Lionsbot</span>
+                            <span>R12 Rex Scrub</span>
+                            <p>The king of cleans! Equipped with innovative technology to clean even the most challenging messes.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$81,150</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 11 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/Blueye.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Blueye</span>
-                        <span>Blueye X1</span>
-                        <p>Underwater Drone designed for seamless underwater exploration and interaction.</p>
-                        <div class="price-cart">
-                            <p class="price">$13,914</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=11">
+                        <div class="pImg">
+                            <img src="assets/Blueye.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">Blueye</span>
+                            <span>Blueye X1</span>
+                            <p>Underwater Drone designed for seamless underwater exploration and interaction.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$13,914</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
+                <!-- Produto 12 -->
                 <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/smartwatch.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Robot-On-Call</span>
-                        <span>Smart Watch</span>
-                        <p>Smart Watch to command service robots effortlessly and simplify daily operations.</p>
-                        <div class="price-cart">
-                            <p class="price">$3,400</p>
-                            <button class="cartBtn"></button>
+                    <a href="sproduct.html?id=12">
+                        <div class="pImg">
+                            <img src="assets/smartwatch.png" alt="" class="card-image">
                         </div>
+                        <div class="pTexts">
+                            <span class="corp-name">Robot-On-Call</span>
+                            <span>RoC Smart Watch</span>
+                            <p>Smart Watch to command service robots effortlessly and simplify daily operations.</p>
+                        </div>
+                    </a>
+                    <div class="price-cart">
+                        <p class="price">$3,400</p>
+                        <button class="cartBtn"></button>
                     </div>
                 </div>
+
             </div>
         </div>
         <section id="news-sec">
@@ -213,15 +273,13 @@
                 <div class="form">
                     <input type="email" placeholder="Your email adress" name="" id="">
                     <button>Sign Up</button>
-
                 </div>
             </div>
         </section>
         <footer>
             <div class="upper-ft">
                 <div class="coll-1 sla">
-                    <img src="assets/logo/Genesis-logo-complete.png" alt="">
-                    <p id="contact" class="bold">Contact</p>
+                    <p id="contact" class="ft-title bold">Contact</p>
                     <p class="info"><span class="bold">Adress:</span> 1234 Elm Street, Springfield, IL 62704, US</p>
                     <p class="info"><span class="bold">Phone:</span> +55 (81)&ThinSpace;9&ThinSpace;9146-8272</p>
                     <p class="info"><span class="bold">Hours:</span> 08:00 - 18:00, Mon - Sat</p>
@@ -236,7 +294,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="coll-2 sla">
+                <div class="coll-2-about sla">
                     <p class="ft-title bold">About</p>
                     <p>About Us</p>
                     <p>Delivery Information</p>

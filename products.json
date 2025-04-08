@@ -1,0 +1,110 @@
+[
+    {
+        "id":1,
+        "img": "assets/NAO V6.png",
+        "corp": "SoftBank Robotics",
+        "nome": "NAO V6",
+        "preco": "$14,990",
+        "details": "A versatile humanoid robot used in education, research and interactive applications. A programmable personal teaching assistant, NAO helps teachers bring lessons to life, making learning more fun and more concrete for students.",
+        "specifications": ["Support dialogs and speech recognition in 20 different languages", "Height: 58cm | Weight: 5.6kg"]
+    },
+    {
+        "id":2,
+        "img": "assets/Kebbi.png",
+        "corp": "NUWA Robotics",
+        "nome": "Kebbi Air Robot",
+        "preco": "$5,000",
+        "details": "Interactive robot designed for education, customer service and healthcare assistance.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":3,
+        "img": "assets/drone.png",
+        "corp": "Vision Aerial",
+        "nome": "Vision Aerial Drone",
+        "preco": "$52,290",
+        "details": "Professional drone for mapping, inspection, surveying, and aerial photography.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":4,
+        "img": "assets/guide.png",
+        "productor": "LG Electronics",
+        "nome": "LG Cloi GuideBot Robot",
+        "preco": "$39,990",
+        "details": "Autonomous robot for navigation, advertising and security monitoring in public spaces.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":5,
+        "img": "assets/dobot.png",
+        "productor": "Dobot",
+        "nome": "Dobot Robotic Arm CR5",
+        "preco": "$22,980",
+        "details": "Collaborative robotic arm with a 5 kg payload capacity for material handling with precision.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":6,
+        "img": "assets/health.png",
+        "productor": "Tesla, Inc",
+        "nome": "Tesla Optimus Gen 2",
+        "preco": "$20,000",
+        "details": "Humanoid robot designed for repetitive and hazardous tasks aiming to improve efficiency in industries.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":7,
+        "img": "assets/health.png",
+        "productor": "UBTECH Robotics",
+        "nome": "Ubtech Cruzr Robot",
+        "preco": "$35,000",
+        "details": "Commercial service robot that interacts through voice, text, and video for reception and guidance.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":8,
+        "img": "assets/cyberdog.png",
+        "productor": "Xiaomi",
+        "nome": "Xiaomi CyberDog 2",
+        "preco": "$3,999",
+        "details": "Bio-inspired quadruped robot designed for research, entertainment and smart home integration.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":9,
+        "img": "assets/LimoPro.png",
+        "productor": "AgileX",
+        "nome": "LIMO PRO",
+        "preco": "$3,200",
+        "details": "Tailored for AI learning and autonomous navigation application development.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":10,
+        "img": "assets/R12-3.png",
+        "productor": "Lionsbot",
+        "nome": "R12 Rex Scrub",
+        "preco": "$81,150",
+        "details": "The king of cleans! Equipped with innovative technology to clean even the most challenging messes.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":11,
+        "img": "assets/Blueye.png",
+        "productor": "Blueye",
+        "nome": "Blueye X1",
+        "preco": "$13,914",
+        "details": "Underwater Drone designed for seamless underwater exploration and interaction.",
+        "specifications": ["????????", "????????"]
+    },
+    {
+        "id":12,
+        "img": "assets/smartwatch.png",
+        "productor": "Robot-On-Call",
+        "nome": "RoC Smart Watch",
+        "preco": "$3,400",
+        "details": "Smart Watch to command service robots effortlessly and simplify daily operations.",
+        "specifications": ["????????", "????????"]
+    }
+]

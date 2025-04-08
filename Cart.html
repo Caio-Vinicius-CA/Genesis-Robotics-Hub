@@ -20,9 +20,9 @@
                     <ul id="head-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="Shop.html">Shop</a></li>
-                        <li class="active"><a href="About.html">About</a></li>
+                        <li><a href="About.html">About</a></li>
                         <li><a href="Contact.html">Contact</a></li>
-                        <li id="cart-li"><a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></li></a>
+                        <li class="active" id="cart-li"><a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></li></a>
                     </ul>
                 </div>
                 <div id="mobile">
@@ -34,7 +34,7 @@
                 <ul id="head-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Shop.html">Shop</a></li>
-                    <li class="active"><a href="About.html">About</a></li>
+                    <li><a href="About.html">About</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                 </ul>
                 <span id="close-menu">&times;</span>
@@ -44,64 +44,74 @@
     <main>
         <div id="shop-landing" class="space">
             <div id="shop-landing-txt">
-                <h1>Know Us</h1>
-                <p>Find Out What Sets Us Apart and How We're Dedicated to Serving You</p>
+                <h1>#Cart</h1>
+                <p>Your robotic future is just a step away!</p>
             </div>
         </div>
-        <div id="about-landing">
-            <div id="about-right-landing" class="space">
-                <img id="landing-img" src="assets/Data extraction-bro.svg" alt="roboto">
-            </div>
-            <div id="about-left-landing">
-                <div id="texts" class="about-txt">
-                    <h1><span id="colorfull1">Futuristic robots</span></h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloribus repellat alias mollitia laboriosam officia ipsa, ullam maiores et deserunt, incidunt error ratione. Possimus nobis reprehenderit rerum eos suscipit quibusdam?</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, fugiat qui eligendi.</p>
-                    <br>
-                    <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut dignissimos, explicabo cum illum!</marquee>
-                </div>
-            </div>
-        </div>
-        <section id="about-app" class="space">
-            <h1 class="great-h1">DOWNLOAD OUR <a href="">APP</a></h1>
-            <div class="media">
-                <img id="landing-img" src="assets/Data extraction-bro.svg" alt="roboto">
-            </div>
+        <section id="cart-products">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td class="bold">Remove</td>
+                        <td class="bold">Image</td>
+                        <td class="bold">Product</td>
+                        <td class="bold">Price</td>
+                        <td class="bold">Quantity</td>
+                        <td class="bold">Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href=""><i class="fa-regular fa-circle-xmark"></i></a></td>
+                        <td><img src="assets/NAO V6.png" alt=""></td>
+                        <td>NAO V6</td>
+                        <td>$14,990</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$14,990</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="fa-regular fa-circle-xmark"></i></a></td>
+                        <td><img src="assets/NAO V6.png" alt=""></td>
+                        <td>NAO V6</td>
+                        <td>$14,990</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$14,990</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="fa-regular fa-circle-xmark"></i></a></td>
+                        <td><img src="assets/NAO V6.png" alt=""></td>
+                        <td>NAO V6</td>
+                        <td>$14,990</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$14,990</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-        <div id="features" class="space">
-            <div class="feature-card">
-                <img src="assets/icons/015.png" alt="">
-                <h5>Global Deliver</h5>
-            </div>
-            <div class="feature-card">
-                <img src="assets/icons/010.png" alt="">
-                <h5>Free Shipping</h5>
-            </div>
-            <div class="feature-card">
-                <img src="assets/icons/002.png" alt="">
-                <h5>Guaranteed Security</h5>
-            </div>
-            <div class="feature-card">
-                <img src="assets/icons/000.png" alt="">
-                <h5>Zero Weight Fees</h5>
-            </div>
-            <div class="feature-card">
-                <img src="assets/icons/012.png" alt="">
-                <h5>24/7 Support</h5>
-            </div>
-        </div>
-        <section id="news-sec" class="space">
-            <div id="newsletter">
-                <div id="newsletter-text">
-                    <h2>Sign Up For Newsletters</h2>
-                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
-                </div>
-                <div class="form">
+        <section id="cart-downs">
+            <div class="form" id="cart-down-left">
+                <h1>Apply Cupons</h1>
+                <div id="cart-sla">
                     <input type="email" placeholder="Your email adress" name="" id="">
                     <button>Sign Up</button>
-
                 </div>
+            </div>
+            <div id="cart-down-right">
+                <h1>Apply Cupons</h1>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td>$44,970</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Total</td>
+                        <td class="bold">$44,970</td>
+                    </tr>
+                </table>
             </div>
         </section>
         <footer>
@@ -158,6 +168,6 @@
                 <p>2023 © Copyright <span class="bold">Genesis Tech&VeryThinSpace;Inc</span> | All rights reserved</p>
             </div>
         </footer>
-    </main>
+    </main> 
 </body>
 </html>

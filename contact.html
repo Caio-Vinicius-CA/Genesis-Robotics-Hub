@@ -4,26 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genesis Robotics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div id="size">
             <div>
-                <img src="assets/logo/Genesis-logo-complete.png" alt="" class="logo" id="scrollToTop">
+                <img src="assets/logo/Genesis-logo-complete.png" alt="" class="logo" onclick="window.location.href='index.html'">
             </div>
-            <div>
+            <div id="fake-nav">
+                <div id="numsei">
+                    <ul id="head-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Shop.html">Shop</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li class="active"><a href="Contact.html">Contact</a></li>
+                        <li id="cart-li"><a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></li></a>
+                    </ul>
+                </div>
+                <div id="mobile">
+                    <a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></a>
+                    <i id="bars" class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <nav id="side-menu">
                 <ul id="head-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Shop.html">Shop</a></li>
                     <li><a href="About.html">About</a></li>
                     <li class="active"><a href="Contact.html">Contact</a></li>
-                    <li><a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></li></a>
                 </ul>
+                <span id="close-menu">&times;</span>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="shop-landing" class="space">
+            <div id="shop-landing-txt" class="typing-demo">
+                <h1>Let's Talk<span class="blink">!</span></h1>
+                <p>Every word counts, every voice matters<span class="blink">.</span></p>
             </div>
         </div>
-    </header>   
+        <div id="contact-landing">
+            <div id="contact-left-landing">
+                <div id="texts">
+                    <p class="thin">GET IN TOUCH</p>
+                    <h2>Visit one of our agency locations <br>or contact us today!</h2>
+                    <p class="bold">Head Office</p>
+                    <div id="textinhos">
+                        <div class="textinhos-left">
+                            <i class="fa-regular fa-map"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                            <i class="fa-solid fa-phone"></i>
+                            <i class="fa-regular fa-clock"></i>
+
+                        </div>
+                        <div class="textinhos-right">
+                            <p class="thin">1234 Elm Street, Springfield, IL 62704, US</p>
+                            <p class="thin">amaralvinicaio.2003@gmail.com</p>
+                            <p class="thin">+55 (81)99146-8272</p>
+                            <p class="thin">Monday to Saturday: 9.am to 16.pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-right-landing" class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.82519568413!2d-89.61341949999999!3d39.8109127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88753a0f2ac78c51%3A0x202003ef7d18ef8e!2s1234%20Elm%20St%2C%20Springfield%2C%20IL%2062702%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1743029493679!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <section id="contact-us-from">
+            <div id="contact-form">
+                <form action="">
+                    <p class="thin">Leave a message</p>
+                    <h2 class="bold">We love to hear from you</h2>
+                    <input type="text" name="" id="" placeholder="Your name">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div id="contact-people">
+                <div class="person">
+                    <img src="assets/pfp.png" alt="">
+                    <p><span>Caio Amaral</span> Web Developer <br> Phone +55 (81)99146-8272 <br>Email: amaralvinicaio.2003@gmail.com</p>
+                </div>
+                <div class="person">
+                    <img src="assets/pfp.png" alt="">
+                    <p><span>Caio Amaral</span> Web Developer <br> Phone +55 (81)99146-8272 <br>Email: amaralvinicaio.2003@gmail.com</p>
+                </div>
+                <div class="person">
+                    <img src="assets/pfp.png" alt="">
+                    <p><span>Caio Amaral</span> Web Developer <br> Phone +55 (81)99146-8272 <br>Email: amaralvinicaio.2003@gmail.com</p>
+                </div>
+            </div>
+        </section>
+        <section id="news-sec" class="space">
+            <div id="newsletter">
+                <div id="newsletter-text">
+                    <h2>Sign Up For Newsletters</h2>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="email" placeholder="Your email adress" name="" id="">
+                    <button>Sign Up</button>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="upper-ft">
+                <div class="coll-1 sla">
+                    <p id="contact" class="ft-title bold">Contact</p>
+                    <p class="info"><span class="bold">Adress:</span> 1234 Elm Street, Springfield, IL 62704, US</p>
+                    <p class="info"><span class="bold">Phone:</span> +55 (81)&ThinSpace;9&ThinSpace;9146-8272</p>
+                    <p class="info"><span class="bold">Hours:</span> 08:00 - 18:00, Mon - Sat</p>
+                    <div id="media">
+                        <p class="bold">Follow Us</p>
+                        <div id="minis">
+                            <img src="assets/icons/facebook.png" alt="">
+                            <img src="assets/icons/twitter.png" alt="">
+                            <img src="assets/icons/instagram.png" alt="">
+                            <img src="assets/icons/youtube.png" alt="">
+                            <img src="assets/icons/whatsapp.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="coll-2-about sla">
+                    <p class="ft-title bold">About</p>
+                    <p>About Us</p>
+                    <p>Delivery Information</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="coll-3 sla">
+                    <p class="ft-title bold">My Account</p>
+                    <p>Sign In</p>
+                    <p>View Cart</p>
+                    <p>My Wishlist</p>
+                    <p>Track My Order</p>
+                    <p>Help</p>
+                </div>
+                <div class="coll-4 sla">
+                    <p class="ft-title bold">Install App</p>
+                    <p>From App Store or Google Play</p>
+                    <div class="fButtons">
+                        <button id="b1"></button>
+                        <button id="b2"></button>
+                    </div>
+                    <p>Secured Payment Gateway</p>
+                    <div class="mini-cards">
+                        <img class="cards" id="c1" src="assets/icons/Visa.png" alt="">
+                        <img class="cards" id="c2" src="assets/icons/mastercard.png" alt="">
+                        <img class="cards" id="c3" src="assets/icons/Maestro.png" alt="">
+                        <img class="cards" id="c4" src="assets/icons/American express.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="lower-ft">
+                <p>2023 © Copyright <span class="bold">Genesis Tech&VeryThinSpace;Inc</span> | All rights reserved</p>
+            </div>
+        </footer>
+    </main> 
 </body>
 </html>

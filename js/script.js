@@ -1,11 +1,39 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("scrollToTop").addEventListener("click", function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
+    const menuIcon = document.getElementById("bars");
+    const sideMenu = document.getElementById("side-menu");
+    const closeMenu = document.getElementById("close-menu");
+
+    // Abrir menu lateral
+    menuIcon.addEventListener("click", function () {
+        sideMenu.style.right = "0"; // Exibir menu lateral
     });
-    document.getElementById("acronym-cagr").addEventListener("mouseenter", function (){
-        message.style.display = 'block';
-    })
+
+    // Fechar menu lateral
+    closeMenu.addEventListener("click", function () {
+        sideMenu.style.right = "-250px"; // Ocultar menu lateral
+    });
+
+    // Fechar ao clicar fora do menu
+    document.addEventListener("click", function (event) {
+        if (!sideMenu.contains(event.target) && event.target !== menuIcon) {
+            sideMenu.style.right = "-250px";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var MainImg = document.getElementById("main-img");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    if (MainImg && smallimg.length > 0) {
+        for (let i = 0; i < smallimg.length; i++) {
+            smallimg[i].onclick = function () {
+                MainImg.src = this.src;
+            };
+        }
+    } else {
+        console.error("Elementos não encontrados ou sem imagens suficientes.");
+    }
 });
