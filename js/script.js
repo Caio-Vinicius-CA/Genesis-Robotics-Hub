@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.getElementById("bars");
     const sideMenu = document.getElementById("side-menu");
@@ -36,4 +34,21 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error("Elementos não encontrados ou sem imagens suficientes.");
     }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const addCartButtons = document.querySelectorAll(".add-to-cart");
+    addCartButtons.forEach(button => {
+        button.addEventListener("click", event => {
+            const productBox = event.target.closest(".productBox");
+            addToCart(productBox)
+        });
+
+    });
+
+    const addToCart = productBox => {
+        const productImgSrc = productBox.querySelector("#main-img");
+        const productTitle = productBox.querySelector("#main-img");
+        const productPrice = productBox.querySelector("#main-img");
+    };
 });

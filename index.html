@@ -23,7 +23,7 @@
                             <li><a href="Shop.html">Shop</a></li>
                             <li><a href="About.html">About</a></li>
                             <li><a href="Contact.html">Contact</a></li>
-                            <li id="cart-li"><a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" alt=""id="cart"></li></a>
+                            <li id="cart-li"><a href="Cart.html"><img src="assets/icons/shopping-cart-1.png" id="cart"></li></a>
                         </ul>
                     </div>
                     <div id="mobile">
@@ -51,7 +51,7 @@
                         <h2>Contact us for orders and offers!</h2>
                         <div id="btn-left">
                             <button type="button" onclick="window.location.href='shop.html'">
-                                <p>Shop Now</p>
+                                <p class="bold main-btn">Shop Now</p>
                             </button>
                         </div>
                     </div>
@@ -88,6 +88,8 @@
                     <p>Discover our most exceptional picks, hand-selected to meet your needs</p>
                 </div>
                 <div id="all-shop-product-cards">
+
+                    <!-- Produto 1 -->
                     <div class="product-card">
                         <a  href="sproduct.html?id=1">
                             <div class="pImg">
@@ -98,12 +100,13 @@
                                 <span>NAO V6 Humanoid Robot</span>
                                 <p>A versatile humanoid robot used in education, research and interactive applications.</p>    
                             </div>
-                        </a>
                             <div class="price-cart">
                                 <p class="price">$14,990</p>
-                                <button class="cartBtn"></button>
                             </div>
+                        </a>
                     </div>
+
+                    <!-- Produto 2 -->
                     <div class="product-card">
                         <a  href="sproduct.html?id=2">
                             <div class="pImg">
@@ -114,12 +117,13 @@
                                 <span>Kebbi Air Robot</span>
                                 <p>Interactive robot designed for education, customer service and healthcare assistance.</p>    
                             </div>
-                        </a>
                             <div class="price-cart">
                                 <p class="price">$5,000</p>
-                                <button class="cartBtn"></button>
+
                             </div>
+                        </a>
                     </div>
+
                     <!-- Produto 3 -->
                     <div class="product-card">
                         <a href="sproduct.html?id=3">
@@ -131,13 +135,12 @@
                                 <span>Vision Aerial Drone</span>
                                 <p>Professional drone for mapping, inspection, surveying, and aerial photography.</p>
                             </div>
+                            <div class="price-cart">
+                                <p class="price">$52,290</p>
+                            </div>
                         </a>
-                        <div class="price-cart">
-                            <p class="price">$52,290</p>
-                            <button class="cartBtn"></button>
-                        </div>
                     </div>
-    
+
                     <!-- Produto 4 -->
                     <div class="product-card">
                         <a href="sproduct.html?id=4">
@@ -149,11 +152,10 @@
                                 <span>LG Cloi GuideBot Robot</span>
                                 <p>Autonomous robot for navigation, advertising and security monitoring in public spaces.</p>
                             </div>
+                            <div class="price-cart">
+                                <p class="price">$39,990</p>
+                            </div>
                         </a>
-                        <div class="price-cart">
-                            <p class="price">$39,990</p>
-                            <button class="cartBtn"></button>
-                        </div>
                     </div>
     
                     <!-- Produto 5 -->
@@ -167,34 +169,15 @@
                                 <span>Dobot Robotic Arm CR5</span>
                                 <p>Collaborative robotic arm with a 5 kg payload capacity for material handling with precision.</p>
                             </div>
+                            <div class="price-cart">
+                                <p class="price">$22,980</p>
+                            </div>
                         </a>
-                        <div class="price-cart">
-                            <p class="price">$22,980</p>
-                            <button class="cartBtn"></button>
-                        </div>
                     </div>
     
                     <!-- Produto 6 -->
                     <div class="product-card">
                         <a href="sproduct.html?id=6">
-                            <div class="pImg">
-                                <img src="assets/health.png" alt="" class="card-image">
-                            </div>
-                            <div class="pTexts">
-                                <span class="corp-name">UBTECH Robotics</span>
-                                <span>Ubtech Cruzr Robot</span>
-                                <p>Commercial service robot that interacts through voice, text, and video for reception and guidance.</p>
-                            </div>
-                        </a>
-                        <div class="price-cart">
-                            <p class="price">$35,000</p>
-                            <button class="cartBtn"></button>
-                        </div>
-                    </div>
-    
-                    <!-- Produto 7 -->
-                    <div class="product-card">
-                        <a href="sproduct.html?id=7">
                             <div class="pImg">
                                 <img src="assets/tesla.png" alt="" class="card-image">
                             </div>
@@ -203,13 +186,29 @@
                                 <span>Tesla Optimus Gen 2</span>
                                 <p>Humanoid robot designed for repetitive and hazardous tasks aiming to improve efficiency in industries.</p>
                             </div>
+                            <div class="price-cart">
+                                <p class="price">$20,000</p>
+                            </div>
                         </a>
-                        <div class="price-cart">
-                            <p class="price">$20,000</p>
-                            <button class="cartBtn"></button>
-                        </div>
                     </div>
     
+                    <!-- Produto 7 -->
+                    <div class="product-card">
+                        <a href="sproduct.html?id=7">
+                            <div class="pImg">
+                                <img src="assets/health.png" alt="" class="card-image">
+                            </div>
+                            <div class="pTexts">
+                                <span class="corp-name">UBTECH Robotics</span>
+                                <span>Ubtech Cruzr Robot</span>
+                                <p>Commercial service robot that interacts through voice, text, and video for reception and guidance.</p>
+                            </div>
+                            <div class="price-cart">
+                                <p class="price">$35,000</p>
+                            </div>
+                        </a>
+                    </div>
+
                     <!-- Produto 8 -->
                     <div class="product-card">
                         <a href="sproduct.html?id=8">
@@ -221,19 +220,20 @@
                                 <span>Xiaomi CyberDog 2</span>
                                 <p>Bio-inspired quadruped robot designed for research, entertainment and smart home integration.</p>
                             </div>
+                            <div class="price-cart">
+                                <p class="price">$3,999</p>
+                            </div>
                         </a>
-                        <div class="price-cart">
-                            <p class="price">$3,999</p>
-                            <button class="cartBtn"></button>
-                        </div>
                     </div>
     
                 </div>
             </div>
             <section>
                 <div id="offer">
-                    <p>Hot Offers</p>
-                    <h1>Up to 30% Off - All Educational robots</h1>
+                    <div id="offer-text">
+                        <p>Hot Offers</p>
+                        <h1>Up to 30% Off - All Educational robots</h1>
+                    </div>
                     <button><a href="shop.html">Explore More</a></button>
                 </div>
             </section>
@@ -281,9 +281,8 @@
                         <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
                     </div>
                     <div class="form">
-                        <input type="email" placeholder="Your email adress" name="" id="">
+                        <input type="email" placeholder="Your email address" name="" class="input-com-icone">
                         <button>Sign Up</button>
-
                     </div>
                 </div>
             </section>
@@ -291,7 +290,7 @@
                 <div class="upper-ft">
                     <div class="coll-1 sla">
                         <p id="contact" class="ft-title bold">Contact</p>
-                        <p class="info"><span class="bold">Adress:</span> 1234 Elm Street, Springfield, IL 62704, US</p>
+                        <p class="info"><span class="bold">Address:</span> 1234 Elm Street, Springfield, IL 62704, US</p>
                         <p class="info"><span class="bold">Phone:</span> +55 (81)&ThinSpace;9&ThinSpace;9146-8272</p>
                         <p class="info"><span class="bold">Hours:</span> 08:00 - 18:00, Mon - Sat</p>
                         <div id="media">

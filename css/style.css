@@ -1,3 +1,16 @@
+.bold{
+    font-weight: bold;
+}
+.thin{
+    font-size: 11pt;
+    font-weight: 100;
+    -webkit-text-stroke: 0.3px black;
+    color: transparent;
+}
+.space{
+    margin-bottom: 60px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,15 +20,6 @@
 html,body{
     width: 100%;
     height: 100%;
-}
-.bold{
-    font-weight: bold;
-}
-.thin{
-    font-size: 11pt;
-    font-weight: 100;
-    -webkit-text-stroke: 0.3px black; /* Adiciona um contorno finíssimo */
-    color: transparent; /* Torna a fonte quase invisível, apenas com contorno */
 }
 body{
     background-color: #E6E6E6;
@@ -27,7 +31,7 @@ header{
     background: #1C1C1E;
     height: 80px;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 5px 12px 5px rgba(0,0,0,0.3);
 }
 #size{
@@ -45,10 +49,10 @@ header{
 }
 #head-list{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
     align-items: center;
     text-align: center;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     list-style: none;
     max-width: 450px;
 }
@@ -84,7 +88,7 @@ header li::after{
 }
 #head-list li:not(:last-child):hover::after,
 #head-list li.active::after{
-    width: 50%;
+    width: 100%;
 }
 #mobile{
     color: #949fb6;
@@ -155,7 +159,10 @@ main{
     display: flex;
     justify-content: center;
 }
-
+.main-btn{
+    font-size: 16px;
+    margin-top: -5px;
+}
 #texts{
     display: flex;
     flex-direction: column;
@@ -259,7 +266,7 @@ main{
 #main-img{
     width: 80%;
     height: 80%;
-    padding: 25px;
+    padding: 20px;
     object-fit: contain;
     object-position: center;
 }
@@ -274,12 +281,13 @@ main{
 .small-img-div{
     display: flex;
     align-items: center;
+    height: 100px;
     flex-basis: 20;
     cursor: pointer;
+    background-color: #d8d8d8;
 }
 .small-img{
     padding: 10px;
-    background-color: #d8d8d8;
     width: 100%;
 }
 
@@ -438,11 +446,11 @@ main{
     padding: 15px;
     border: 1px solid #838f84;
     border-radius: 5px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    box-shadow: rgba(0, 0, 0, 0.25) 4px 4px, rgba(0, 0, 0, 0.15) 8px 8px, rgba(0, 0, 0, 0.1) 12px 12px, rgba(0, 0, 0, 0.05) 16px 16px;
     transition: 0.3s ease-in-out;
 }
 .feature-card:hover{
-    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px, rgba(0, 0, 0, 0.1) 5px 5px, rgba(0, 0, 0, 0.025) 9px 9px;
     transition: 0.3s ease-in-out;
 }
 #features img{
@@ -541,23 +549,9 @@ main{
     padding-bottom: 5px;
 }
 .price-cart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    bottom: 5px;
-    left: 25%;
-    gap: 20px;
-}
-.cartBtn{
-    background: url(../assets/icons/shopping-cart.png) center no-repeat;
-    background-size: cover;
-    border: none;
-    margin-top: 2px;
-    border-radius: 100px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
+    bottom: 2%;
+    left: 35%;
 }
 #offer{
     background: url(../assets/banner-3.png) right no-repeat;
@@ -575,6 +569,26 @@ main{
     font-size: 1.6rem;
     z-index: -1;
 }
+#offer-text {
+    background: white;
+    border-radius: 18px;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#offer-text::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background: linear-gradient(#4B5874, #626C80);
+    border-radius: 25px;
+    z-index: -1;
+}  
 #offer button{
     display: flex;
     margin-top: 15px;
@@ -615,10 +629,12 @@ main{
     gap: 80px;
 }
 .big-banner{
+    position: relative;
     width: 550px;
     height: 360px;
     color: white;
-    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .big-banner a{
     color: white;
@@ -664,12 +680,12 @@ main{
     color: white;
     position: relative;
     overflow: hidden;
-    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.3s ease-in-out;
+    border-radius: 10px;
 }
 .small-banner:hover{
-    box-shadow:  20px 20px 40px #868686,
-    -20px -20px 48px #b6b6b6;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: 0.3s ease-in-out;
 }
 #small-banner-1{
@@ -704,7 +720,7 @@ main{
     cursor: help;
 }
 #news-sec{
-    background: url(../assets/banner-1.png);
+    background: url(../assets/banner-1.png) center center;
 }
 #newsletter{
     display: flex;
@@ -714,6 +730,11 @@ main{
     width: 1300px;
     height: 150px;
     margin-bottom: 40px;
+}
+#newsletter-text{
+    background-color: #4B5B7E;
+    border: 15px solid #4B5B7E;
+    border-radius: 18px;
 }
 #newsletter h2{
     margin-bottom: 10px;
@@ -727,26 +748,51 @@ main{
     display: flex;
     width: 40%;
 }
+.form{
+    box-shadow: rgba(39, 48, 55, 0.4) 6px 2px 16px 0px, rgba(60, 60, 60, 0.7) -6px -1px 14px 0px;
+    border-radius: 6px 10px 10px 6px;
+}
 #newsletter input,
 #cart-downs .form input{
     height: 3.125rem;
     padding: 0 1em;
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     border: 1px solid transparent;
-    border-radius: 4px;
+    border-right: none;
+    border-radius: 6px 10px 10px 6px;
     outline: none;
+}
+.input-com-icone{
+    background-image: url(../assets/icons/envelope.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 16px;
+    color: rgb(153, 153, 153);
+}
+.input-com-icone::placeholder {
+    color: #999;
+    padding-left: 18px;
 }
 #newsletter button,
 #cart-downs .form button{
     height: 3.125rem;
     width: 30%;
+    margin-left: -20px;
     color: white;
     font-weight: bold;
     border: 1px solid #949fb6;
-    border-radius: 4px;
-    background: #517390;
+    border-radius: 12px;
+    background: #21355F;
     cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+#newsletter button:hover,
+#cart-downs .form button:hover{
+    background: #2a4174;
+    transition: 0.3s ease-in-out;
 }
 #about-app{
     display: flex;
@@ -768,7 +814,10 @@ main{
 }
 #cart-products{
     max-width: 1300px;
-    margin: 0 auto 60px auto;
+    height: 420px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin: 0 auto 80px auto;
 }
 #cart-products table{
     margin: 0 auto;
@@ -777,15 +826,24 @@ main{
     white-space: nowrap;
     border: 1px solid #cdcdcd;
 }
+.PQPPQP{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
 #cart-products thead{
     text-transform: uppercase;
-    border: 3px solid #cdcdcd;
+    position: sticky;
+    top: -1px;
+    background-color: #E6E6E6;
+    z-index: 1;
+}
+#cart-products thead th{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 2px solid #cdcdcd;
     border-left: none;
     border-right: none;
-}
-#cart-products thead td{
     font-size: 18px;
     padding: 18px 0;
+    background-color: #E6E6E6;
 }
 #cart-products tbody tr{
     border: 1px solid #cdcdcd;
@@ -795,6 +853,8 @@ main{
 #cart-products tbody tr td{
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
+    z-index: 0;
 }
 #cart-products tbody td{
     font-size: 15px;
@@ -840,7 +900,11 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding-top: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.cupom h1{
+    margin: 0 auto;
 }
 #cart-sla{
     display: flex;
@@ -856,37 +920,30 @@ max-width: 400px;
 font-family: 'Roboto', sans-serif;
 margin: 20px auto;
 }
-
 #cart-down-right h1 {
 font-size: 24px;
 margin-bottom: 20px;
 font-weight: 600;
 color: #222;
 }
-
 #cart-down-right table {
 width: 100%;
 border-collapse: collapse;
 }
-
 #cart-down-right td {
 padding: 12px 0;
 font-size: 16px;
 color: #333;
 }
-
 #cart-down-right td.bold {
 font-weight: bold;
 font-size: 18px;
 color: #111;
 }
-  
 
 
-
-
-.space{
-    margin-bottom: 60px;
+footer{
+    color: #717171;
 }
 #footer-logo-div{
     display: flex;
@@ -944,10 +1001,12 @@ footer button{
 footer #b1{
     background: url(../assets/app-store.png) center;
     background-size: cover;
+    cursor: pointer;
 }
 footer #b2{
     background: url(../assets/google-play.png) center;
     background-size: cover;
+    cursor: pointer;
 }
 #minis{
     display: flex;
@@ -978,8 +1037,6 @@ footer #b2{
     color: white;
     font-size: 1.1rem;
 }
-
-
 
 
 /* Start Media Query */

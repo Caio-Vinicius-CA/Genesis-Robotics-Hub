@@ -2,109 +2,133 @@
     {
         "id":1,
         "img": "assets/NAO V6.png",
+        "smallImages": ["assets/NAO V6.png", "assets/NAO V6 BLue.png", "assets/NAO V6 Red.png"],
         "corp": "SoftBank Robotics",
         "nome": "NAO V6",
         "preco": "$14,990",
         "details": "A versatile humanoid robot used in education, research and interactive applications. A programmable personal teaching assistant, NAO helps teachers bring lessons to life, making learning more fun and more concrete for students.",
-        "specifications": ["Support dialogs and speech recognition in 20 different languages", "Height: 58cm | Weight: 5.6kg"]
+        "specifications": ["Height: 58cm | Weight: 5.6kg", "Support dialogs and speech recognition in 20 different languages"],
+        "models": ["Black", "Blue", "Red"]        
     },
     {
         "id":2,
         "img": "assets/Kebbi.png",
+        "smallImages": ["assets/Kebbi.png", "assets/Kebbi S.png"],
         "corp": "NUWA Robotics",
         "nome": "Kebbi Air Robot",
         "preco": "$5,000",
         "details": "Interactive robot designed for education, customer service and healthcare assistance.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Size: 12.5 x 12.1 x 6.5 | 5.5lbs", "Kebbi engages users through physical gestures, facial recognition, and two-way communication"],
+        "models": ["Kebbi", "Kebbi S"]
     },
     {
         "id":3,
         "img": "assets/drone.png",
+        "smallImages": ["assets/drone.png", "assets/drone3.png"],
         "corp": "Vision Aerial",
         "nome": "Vision Aerial Drone",
         "preco": "$52,290",
         "details": "Professional drone for mapping, inspection, surveying, and aerial photography.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Dimentions: 42.7x10.4 inches | 13.2lbs", "11lbs payload capacity"],
+        "models": ["6 Helix", "3 Helix"]
     },
     {
         "id":4,
         "img": "assets/guide.png",
-        "productor": "LG Electronics",
+        "smallImages": ["assets/guide.png"],
+        "corp": "LG Electronics",
         "nome": "LG Cloi GuideBot Robot",
         "preco": "$39,990",
         "details": "Autonomous robot for navigation, advertising and security monitoring in public spaces.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Dimensions 20.1 x 59.1 x 20.1 inches |Weight: 176.4 pounds", "customer service robot, designed to transform the hospitality experience"],
+        "models": ["Standard"]
     },
     {
         "id":5,
         "img": "assets/dobot.png",
-        "productor": "Dobot",
+        "smallImages": ["assets/dobot.png", "assets/dobot2.png"],
+        "corp": "Dobot",
         "nome": "Dobot Robotic Arm CR5",
         "preco": "$22,980",
         "details": "Collaborative robotic arm with a 5 kg payload capacity for material handling with precision.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Reach: 900 mm | Weight: 25 kg", "6-axis robot arm that has a payload of 5 kg"],
+        "models": ["B&W", "Gray"]
     },
     {
         "id":6,
-        "img": "assets/health.png",
-        "productor": "Tesla, Inc",
+        "img": "assets/tesla.png",
+        "smallImages": ["assets/tesla.png"],
+        "corp": "Tesla, Inc",
         "nome": "Tesla Optimus Gen 2",
         "preco": "$20,000",
         "details": "Humanoid robot designed for repetitive and hazardous tasks aiming to improve efficiency in industries.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Height: 173 cm | Weight: 63 kg", "Learns from and adapts to its surroundings over time, increasing its functionality"],
+        "models": ["Standard"]
     },
     {
         "id":7,
         "img": "assets/health.png",
-        "productor": "UBTECH Robotics",
+        "smallImages": ["assets/health.png"],
+        "corp": "UBTECH Robotics",
         "nome": "Ubtech Cruzr Robot",
         "preco": "$35,000",
         "details": "Commercial service robot that interacts through voice, text, and video for reception and guidance.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Dimentions: 1210 x 630 x 537 | weight: 45KG", "Customizable, flexible programming for a wide range of tasks"],
+        "models": ["Standard"]        
     },
     {
         "id":8,
         "img": "assets/cyberdog.png",
-        "productor": "Xiaomi",
+        "smallImages": ["assets/cyberdog.png"],
+        "corp": "Xiaomi",
         "nome": "Xiaomi CyberDog 2",
         "preco": "$3,999",
         "details": "Bio-inspired quadruped robot designed for research, entertainment and smart home integration.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Dimentions: 48 x 34 x 56 cm | Weight: 8.9 kg", "19 high-precision sensors, including an ultrasonic and a LiDAR"],
+        "models": ["Black"]
     },
     {
         "id":9,
         "img": "assets/LimoPro.png",
-        "productor": "AgileX",
+        "smallImages": ["assets/LimoPro.png", "assets/limo.png"],
+        "corp": "AgileX",
         "nome": "LIMO PRO",
         "preco": "$3,200",
         "details": "Tailored for AI learning and autonomous navigation application development.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Dimentions: 322mm x 220mm x 251mm | weight: 45KG", "Ideal for developing autonomous navigation and visual recognition applications"],
+        "models": ["Standard"]        
     },
     {
         "id":10,
         "img": "assets/R12-3.png",
-        "productor": "Lionsbot",
+        "smallImages": ["assets/R12-3.png", "assets/rexGray.png"],
+        "corp": "Lionsbot",
         "nome": "R12 Rex Scrub",
         "preco": "$81,150",
         "details": "The king of cleans! Equipped with innovative technology to clean even the most challenging messes.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["Dimentions: 1,473mm x 890mm x 1,675mm | weight: 550kg", "????????"],
+        "models": ["Black", "Gray"]        
     },
     {
         "id":11,
         "img": "assets/Blueye.png",
-        "productor": "Blueye",
+        "smallImages": ["assets/Blueye.png", "assets/blueye Gray.png"],
+        "corp": "Blueye",
         "nome": "Blueye X1",
         "preco": "$13,914",
         "details": "Underwater Drone designed for seamless underwater exploration and interaction.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["????????", "????????"],
+        "models": ["White", "Gray"]        
     },
     {
         "id":12,
         "img": "assets/smartwatch.png",
-        "productor": "Robot-On-Call",
+        "smallImages": ["assets/smartwatch.png", "assets/roc2.png"],
+        "corp": "Robot-On-Call",
         "nome": "RoC Smart Watch",
         "preco": "$3,400",
         "details": "Smart Watch to command service robots effortlessly and simplify daily operations.",
-        "specifications": ["????????", "????????"]
+        "specifications": ["????????", "????????"],
+        "models": ["Square", "Round"]        
     }
 ]

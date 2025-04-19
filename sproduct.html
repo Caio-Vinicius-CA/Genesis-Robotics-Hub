@@ -44,40 +44,26 @@
     <main class="sproduct-main">  
         <section id="product-details">
             <div id="small-products-group">
-                <div class="small-img-div">
-                    <img src="assets/NAO V6.png" alt="" width="100%" class="small-img">
-                </div>
-                <div class="small-img-div">
-                    <img src="assets/NAO V6 Blue.png" alt="" width="100%" class="small-img">
-                </div>
-                <div class="small-img-div">
-                    <img src="assets/NAO V6 Red.png" alt="" width="100%" class="small-img">
-                </div>
             </div>
             <div class="product-left-landing">
                 <div id="main-img-div">
-                    <img src="" alt="Humanoid robot NAO V6" id="main-img">
+                    <img src="" alt="robot" id="main-img">
                 </div>    
             </div>
             <div class="product-right-landing">
-                <h4>SoftBank Robotics</h4>
-                <h2 class="bold" id="product-nome"></h2>
-                <h2>$14,990</h2>
-                <select>
+                <h4 id="corp">-</h4>
+                <h2 class="bold" id="product-nome">-</h2>
+                <h2 id="preco">$</h2>
+                <select class="models">
                     <option>Select Model</option>
-                    <option>Black</option>
-                    <option>Blue</option>
-                    <option>Red</option>
                 </select>
-                <input type="number" value="1">
-                <button>Add to Cart</button>
+                <input type="number" value="1" min="1">
+                <button class="add-to-cart">Add to Cart</button>
                 <h4>Product Details</h4>
                 <span id="description"></span>
                 <h4>Specifications</h4>
-                <Ul id="spec-list">
-                    <li>Support dialogs and speech recognition in 20 different languages</li>
-                    <li>Height: 58cm | Weight: 5.6kg</li>
-                    <li></li>
+                <Ul id="spec-list" class="specifications">
+                    
                 </Ul>
             </div>
         </section>
@@ -87,62 +73,73 @@
                 <p>Discover our most exceptional picks, hand-selected to meet your needs</p>
             </div>
             <div id="all-shop-product-cards">
-                <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/dobot.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Dobot</span>
-                        <span>Dobot Robotic Arm CR5</span>
-                        <p>Collaborative robotic arm with a 5 kg payload capacity for material handling with precision.</p>
+                    <!-- Produto 5 -->
+                    <div class="product-card">
+                        <a href="sproduct.html?id=5">
+                            <div class="pImg">
+                                <img src="assets/dobot.png" alt="" class="card-image">
+                            </div>
+                            <div class="pTexts">
+                                <span class="corp-name">Dobot</span>
+                                <span>Dobot Robotic Arm CR5</span>
+                                <p>Collaborative robotic arm with a 5 kg payload capacity for material handling with precision.</p>
+                            </div>
+                        </a>
                         <div class="price-cart">
                             <p class="price">$22,980</p>
-                            <button class="cartBtn"></button>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/health.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">UBTECH Robotics</span>
-                        <span>Ubtech Cruzr Robot</span>
-                        <p>Commercial service robot that interacts through voice, text, and video for reception and guidance.</p>
-                        <div class="price-cart">
-                            <p class="price">$35,000</p>
-                            <button class="cartBtn"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/tesla.png" alt="">
-                    </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Tesla, Inc</span>
-                        <span>Tesla Optimus Gen 2</span>
-                        <p>Humanoid robot designed for repetitive and hazardous tasks aiming to improve efficiency in industries.</p>
+    
+                    <!-- Produto 6 -->
+                    <div class="product-card">
+                        <a href="sproduct.html?id=6">
+                            <div class="pImg">
+                                <img src="assets/tesla.png" alt="" class="card-image">
+                            </div>
+                            <div class="pTexts">
+                                <span class="corp-name">Tesla, Inc</span>
+                                <span>Tesla Optimus Gen 2</span>
+                                <p>Humanoid robot designed for repetitive and hazardous tasks aiming to improve efficiency in industries.</p>
+                            </div>
+                        </a>
                         <div class="price-cart">
                             <p class="price">$20,000</p>
-                            <button class="cartBtn"></button>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="pImg">
-                        <img src="assets/cyberdog.png" alt="">
+    
+                    <!-- Produto 7 -->
+                    <div class="product-card">
+                        <a href="sproduct.html?id=7">
+                            <div class="pImg">
+                                <img src="assets/health.png" alt="" class="card-image">
+                            </div>
+                            <div class="pTexts">
+                                <span class="corp-name">UBTECH Robotics</span>
+                                <span>Ubtech Cruzr Robot</span>
+                                <p>Commercial service robot that interacts through voice, text, and video for reception and guidance.</p>
+                            </div>
+                        </a>
+                        <div class="price-cart">
+                            <p class="price">$35,000</p>
+                        </div>
                     </div>
-                    <div class="pTexts">
-                        <span class="corp-name">Xiaomi</span>
-                        <span>Xiaomi CyberDog 2</span>
-                        <p>Bio-inspired quadruped robot designed for research, entertainment and smart home integration.</p>
+    
+                    <!-- Produto 8 -->
+                    <div class="product-card">
+                        <a href="sproduct.html?id=8">
+                            <div class="pImg">
+                                <img src="assets/cyberdog.png" alt="" class="card-image">
+                            </div>
+                            <div class="pTexts">
+                                <span class="corp-name">Xiaomi</span>
+                                <span>Xiaomi CyberDog 2</span>
+                                <p>Bio-inspired quadruped robot designed for research, entertainment and smart home integration.</p>
+                            </div>
+                        </a>
                         <div class="price-cart">
                             <p class="price">$3,999</p>
-                            <button class="cartBtn"></button>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
         <section id="news-sec">
@@ -152,7 +149,7 @@
                     <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
                 </div>
                 <div class="form">
-                    <input type="email" placeholder="Your email adress" name="" id="">
+                    <input type="email" placeholder="Your email address" name="" id="">
                     <button>Sign Up</button>
 
                 </div>
@@ -162,7 +159,7 @@
             <div class="upper-ft">
                 <div class="coll-1 sla">
                     <p id="contact" class="ft-title bold">Contact</p>
-                    <p class="info"><span class="bold">Adress:</span> 1234 Elm Street, Springfield, IL 62704, US</p>
+                    <p class="info"><span class="bold">Address:</span> 1234 Elm Street, Springfield, IL 62704, US</p>
                     <p class="info"><span class="bold">Phone:</span> +55 (81)&ThinSpace;9&ThinSpace;9146-8272</p>
                     <p class="info"><span class="bold">Hours:</span> 08:00 - 18:00, Mon - Sat</p>
                     <div id="media">
@@ -222,11 +219,52 @@
             .then(products => 
                 {
                     const product = products.find(p => p.id == productId);
+                    const specs = document.querySelector(".specifications");
+                    const modelSelec = document.querySelector(".models");
+                    const smallImg = document.querySelectorAll("#small-products-group .small-img");
 
                     if(product) {
                         document.getElementById("product-nome").textContent = product.nome;
-                        document.getElementById("main-img").src = product.img;
+                        const mainImgJs = document.getElementById("main-img").src = product.img;
                         document.getElementById("description").textContent = product.details;
+                        document.getElementById("preco").textContent = product.preco;
+                        document.getElementById("corp").textContent = product.corp;
+
+                        specs.innerHTML = "";
+                        product.specifications.forEach(spec => {
+                            const li = document.createElement("li");
+                            li.textContent = spec;
+                            specs.appendChild(li);
+                        });
+
+                        product.models.forEach(model =>{
+                            const option = document.createElement("option");
+                            option.textContent = model;
+                            modelSelec.appendChild(option);
+                        });
+
+                        const group = document.getElementById("small-products-group");
+                        group.innerHTML = ""; // limpa as imagens antigas
+
+
+                        product.smallImages.forEach(imgsrc => {
+                            const div = document.createElement("div");
+                            div.classList.add("small-img-div");
+
+                            const img = document.createElement("img");
+                            img.src = imgsrc;
+                            img.alt = "";
+                            img.width = 100;
+                            img.classList.add("small-img");
+
+                            img.addEventListener("click", () => {
+                                document.getElementById("main-img").src = imgsrc;
+                            });
+
+                            div.appendChild(img);
+                            group.appendChild(div);
+                        });
+
                     } else {
                         document.body.innerHTML = "<h1>Produto não encontrado!</h1>";
                     }
