@@ -42,6 +42,7 @@ header{
     max-width: 1250px;
     gap: 500px;
 }
+
 .logo{
     height: 80px;
     padding: 4px 0;
@@ -138,6 +139,7 @@ main{
     margin: 0 auto;
     max-width: 1200px;
     padding: 20px 10px;
+    position: relative;
 }
 #left-landing, #about-left-landing, #contact-left-landing{
     display: flex;
@@ -207,6 +209,9 @@ main{
     height: 440px;
     margin-top: 20px;
 }
+#btn-left{
+    margin: 0 auto;
+}
 #btn-left button{
     background: url(../assets/noun-button.png) no-repeat center;
     background-size: cover;
@@ -216,7 +221,7 @@ main{
     height: 75px;
     width: 130px;
     margin-top: 10px;
-    margin-left: 25%;
+
 }
 #shop-landing{
     background: url(/assets/cutebg.jpg) center center no-repeat;
@@ -504,7 +509,7 @@ main{
     transition: 0.3s ease-in-out;
 }
 .product-card:hover{
-    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.15);
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
     transition: 0.3s ease-in-out;
 }
 .pImg{
@@ -1051,7 +1056,7 @@ footer #b2{
         align-items: center;
         margin: 0 auto;
         max-width: 1250px;
-        gap: 500px;
+        gap:500px;
     }
     #numsei{
         display: none;
@@ -1224,6 +1229,244 @@ footer #b2{
     footer .upper-ft{
         display: grid;
         grid-template-columns: 1.3fr repeat(1, 1fr);
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        gap: 20px;
+    }
+}
+
+@media (max-width:480px){
+    header{
+        padding: 0 10px;
+    }
+    #size{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 500px;
+        gap: 200px;
+    }
+    #numsei{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+    #cart{
+        height: 22px;
+        margin-right: 25px;
+    }
+    #bars{
+        font-size: 25px;
+        cursor: pointer;
+    }
+    #head-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+        list-style: none;
+        max-width: auto;
+    }
+    #head-list li:hover::after,
+    #head-list li.active::after{
+        width: 50%;
+    }
+    #landing{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 20px 10px;
+    }
+    #right-landing{
+        position: absolute;
+        top: 5%;
+        left: 22%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    #left-landing{
+        margin-top: 125px;
+        background: rgba(230, 230, 230, 0.7);
+    }
+    #about-landing{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px auto 30px auto;
+        max-width: 1200px;
+        padding: 20px 10px;
+    }
+    #about-right-landing{
+        position: absolute;
+        z-index: -1;
+        opacity: 18%;
+    }
+    #contact-landing{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: -50px;
+        max-width: 1200px;
+    }
+    #contact-left-landing{
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 50px;
+    }
+    #contact-us-from{
+        border: 2px solid #cdcdcd;
+        padding: 30px 20px;
+        margin: 80px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-form form{
+        width: 670px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    #contact-people{
+        padding: 25px auto;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .person{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+    }
+    #features{
+        margin-top: 40px;
+        padding: 35px 35px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        gap: 35px;
+    }
+    #features img{
+        height: 105px;
+    }
+    #pTitle{
+        text-align: center;
+    }
+    #all-shop-product-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .product-card{
+        width: 245px;
+        height: 400px;
+    }
+    .pImg{
+        height: 230px;
+    }
+    .product-card .price{
+        font-size: 1.08rem;
+    }
+    #offer{
+        height: 270px;
+        margin-top: 50px;
+        font-size: 1.3rem;
+    }
+    #offer button{
+        width: 120px;
+        height: 45px;
+    }
+    #big-banners-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+    .big-banner{
+        width: 400px;
+        height: 320px;
+    }
+    .banner-texts{
+        max-width: 380px;
+        line-height: 1.4;
+        font-size: 1.2rem;
+    }
+    .banner-texts:hover{
+        background: rgba(0, 0, 0, 0.45);
+        transform: scale(1.02);
+    }
+    /* #small-banners-section{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: start;
+        gap: 15px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        height: 320px;
+        width: 380px;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+    .small-banner{
+        width: 370px;
+        height: 320px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+    .small-banner-text{
+        background: #6d6d6db0;
+        position: absolute;
+        top: auto;
+        bottom: -20px;
+        height: 120px;
+        transition: 0.3s ease-in-out;
+    }
+    .small-banner:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    .small-banner:hover .small-banner-text {
+        transform: none;
+    }
+
+    #small-banners-section::-webkit-scrollbar {
+        width: 8px;
+    }
+    #small-banners-section::-webkit-scrollbar-thumb {
+        background: #838f84;
+        border-radius: 4px;
+    }
+    #small-banners-section::-webkit-scrollbar-track {
+        background: #59595c;
+    } */
+
+    #newsletter{
+        gap: 25px;
+        width: 100%;
+        height: 190px;
+    }
+    #newsletter .form,
+    #cart-downs .form{
+        width: 60%;
+    }
+    #newsletter button,
+    #cart-downs .form button{
+        width: 40%;
+    }
+
+    footer .upper-ft{
+        display: grid;
+        grid-template-columns: 1.3fr, 1fr;
         width: 100%;
         margin: 0 auto;
         margin-bottom: 80px;
