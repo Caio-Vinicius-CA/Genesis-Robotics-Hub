@@ -593,7 +593,7 @@ main{
     background: linear-gradient(#4B5874, #626C80);
     border-radius: 25px;
     z-index: -1;
-}  
+}
 #offer button{
     display: flex;
     margin-top: 15px;
@@ -1379,6 +1379,9 @@ footer #b2{
         margin-top: 50px;
         font-size: 1.3rem;
     }
+    #offer-text{
+        width: 91%;
+    }
     #offer button{
         width: 120px;
         height: 45px;
@@ -1401,53 +1404,6 @@ footer #b2{
         background: rgba(0, 0, 0, 0.45);
         transform: scale(1.02);
     }
-    /* #small-banners-section{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: start;
-        gap: 15px;
-        margin: 0 auto;
-        margin-bottom: 60px;
-
-        height: 320px;
-        width: 380px;
-        overflow-y: auto;
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-    }
-    .small-banner{
-        width: 370px;
-        height: 320px;
-        flex: 0 0 auto;
-        scroll-snap-align: start;
-    }
-    .small-banner-text{
-        background: #6d6d6db0;
-        position: absolute;
-        top: auto;
-        bottom: -20px;
-        height: 120px;
-        transition: 0.3s ease-in-out;
-    }
-    .small-banner:hover {
-        box-shadow: none;
-        transform: none;
-    }
-    .small-banner:hover .small-banner-text {
-        transform: none;
-    }
-
-    #small-banners-section::-webkit-scrollbar {
-        width: 8px;
-    }
-    #small-banners-section::-webkit-scrollbar-thumb {
-        background: #838f84;
-        border-radius: 4px;
-    }
-    #small-banners-section::-webkit-scrollbar-track {
-        background: #59595c;
-    } */
-
     #newsletter{
         gap: 25px;
         width: 100%;
