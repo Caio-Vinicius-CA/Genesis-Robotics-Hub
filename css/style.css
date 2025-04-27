@@ -975,9 +975,7 @@ footer .upper-ft{
 .sla{
     padding: 5px;
 }
-.coll-1 img{
-    height: 80px;
-}
+
 #media{
     margin-top: 10px;
     padding-top: 5px;
@@ -1464,12 +1462,48 @@ footer #b2{
         width: 40%;
     }
 
-    footer .upper-ft{
-        display: grid;
-        grid-template-columns: 1.3fr, 1fr;
+    footer .upper-ft {
         width: 100%;
-        margin: 0 auto;
-        margin-bottom: 80px;
-        gap: 20px;
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+        padding: 0 20px; /* Deixa uma margem para respirar */
+        gap: 30px; /* Um pouco mais de espaço entre as seções */
+        margin-bottom: 20px;
     }
+
+    .fButtons {
+        flex-direction: column; /* Botões um embaixo do outro */
+        width: 150px;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    #minis {
+        justify-content: center; /* Ícones de redes sociais centralizados */
+    }
+
+    .mini-cards {
+        justify-content: center; /* Ícones de pagamento centralizados */
+    }
+
+    #media {
+        text-align: center; /* Texto "Follow Us" centralizado */
+    }
+
+    .sla {
+        text-align: center; /* Centralizar o conteúdo das colunas */
+    }
+
+    #minis img {
+        height: 25px; /* Ajusta o tamanho dos ícones para celulares */
+        width: 25px;
+    }
+
+    .mini-cards img{
+        height: 25px;
+    }
+
+    #lower-ft{
+        font-size: 1rem;
+    }
+
 }
